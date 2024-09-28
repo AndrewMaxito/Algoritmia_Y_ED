@@ -38,7 +38,7 @@ int desapilar(struct Pila & pila){
     
     if (esPilaVacia(pila)){
         cout<<"La pila está vacía, por lo tanto no se puede desapilar"<<endl;
-	exit(1); // valor de salida que indica que existe un error
+	exit(11); // valor de salida que indica que existe un error
     }	
     
     int elemento = cima(pila);
