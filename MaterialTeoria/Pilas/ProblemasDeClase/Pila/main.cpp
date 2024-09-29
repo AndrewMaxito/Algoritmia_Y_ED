@@ -8,6 +8,7 @@
 #include <iostream>
 #include "Pila.h"
 #include "funcionesPila.h"
+#include "funcionesLista.h"
 using namespace std;
 
 void pasapila(Pila &pila1,Pila &pila2){
@@ -70,34 +71,45 @@ void hanoi(int n,Pila &a,Pila &b,Pila &c){ //a= pila_origen, b=pila_auxiliar, c=
     
     if(n==0) return;
     hanoi(n-1,a,c,b);
+     
     apilar(c,desapilar(a));
+    
+    
+    
     hanoi(n-1,b,a,c);
+    cout<<"hani------"<<endl;
+    imprimir(a);
+    cout<<endl;
+   
     
 }
 
 
 int main(int argc, char** argv) {
     /**/
-    struct Pila pila,pfin;
+    struct Pila pila,pfin,b;
     construir(pila);
     /*Apilamos elementos en la pila*/
     apilar(pila, 10);
     apilar(pila, 2);
     apilar(pila, 30);
     apilar(pila, 4);
-    cout<<"Pila incial: "<<endl;
-    imprimir(pila);
-    
+//    cout<<"Pila incial: "<<endl;
+//    imprimir(pila);
+//    
     construir(pfin);
-    pasapilaRec(pila,pfin);
-    //pasapila(pila,pfin);
-    cout<<"Mostrar pila copiada: "<<endl;
+    construir(b);
+//    pasapilaRec(pila,pfin);
+//    //pasapila(pila,pfin);
+//    cout<<"Mostrar pila copiada: "<<endl;
+//    imprimir(pfin);
+//    
+//    ordenarec(pfin,longitud(pfin));
+//    cout<<"Motsrar la nueva pila ordenada: "<<endl;
+//    imprimir(pfin);
+    hanoi(4,pila,b,pfin);
+    cout<<"luego de Hanoi"<<endl;
     imprimir(pfin);
-    
-    ordenarec(pfin,longitud(pfin));
-    cout<<"Motsrar la nueva pila ordenada: "<<endl;
-    imprimir(pfin);
- 
     return 0;
 }
 
