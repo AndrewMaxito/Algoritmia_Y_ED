@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=p2_ns
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/p2_ns
+CND_ARTIFACT_NAME_Debug=p2_s2
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/p2_s2
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
-CND_PACKAGE_NAME_Debug=p2ns.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/p2ns.tar
+CND_PACKAGE_NAME_Debug=p2s2.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/p2s2.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=p2_ns
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/p2_ns
+CND_ARTIFACT_NAME_Release=p2_s2
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/p2_s2
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
-CND_PACKAGE_NAME_Release=p2ns.tar
-CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/p2ns.tar
+CND_PACKAGE_NAME_Release=p2s2.tar
+CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/p2s2.tar
 #
 # include compiler specific variables
 #
