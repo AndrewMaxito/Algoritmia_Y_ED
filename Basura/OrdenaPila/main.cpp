@@ -52,9 +52,9 @@ int main(int argc, char** argv) {
     construir(pilaPrin);
     apilar(pilaPrin, 1);
     apilar(pilaPrin, 4);
-    apilar(pilaPrin, 3);
-    apilar(pilaPrin, 7);
-    apilar(pilaPrin, 2);
+//    apilar(pilaPrin, 3);
+//    apilar(pilaPrin, 7);
+//    apilar(pilaPrin, 2);
     cout << "Pila inicial: " << endl;
     imprimir(pilaPrin);
     ordenarPila(pilaPrin);
