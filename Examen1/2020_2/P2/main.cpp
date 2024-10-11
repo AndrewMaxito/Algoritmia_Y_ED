@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     for (int i = 0; i < cantDias; i++) {
         int valorActual = arrPerCont[i];
         int cantAcumulada =0;
-        while (esPilaVacia(pilaAux) == false and cima(pilaAux) < valorActual) {
+        while (esPilaVacia(pilaAux) == false and cima(pilaAux) <= valorActual) {
             cantAcumulada += ( 1 + pilaAux.lista.cabeza->cant);
             int basura = desapilar(pilaAux); //quitarlo
         }
