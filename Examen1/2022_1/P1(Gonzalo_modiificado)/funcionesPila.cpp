@@ -29,22 +29,27 @@ int longitud(const struct Pila  & pila){
 }
 
 /* push, añade un elemento a la parte superior de la pila */
-void apilar(struct Pila & pila, int elemento){
+void apilar(struct Pila & pila, struct Producto elemento){
     insertarAlInicio(pila.lista, elemento);
-//    cout<<"Apilando: "<<elemento<<endl;
+//    cout<<"Apilando: "<<elemento.id<<endl;
 }
 
 /* pop, elimina un elemento de la parte superior de la pila*/
-int desapilar(struct Pila & pila){
+struct Producto desapilar(struct Pila & pila){
     
     if (esPilaVacia(pila)){
         cout<<"La pila está vacía, por lo tanto no se puede desapilar"<<endl;
-	return -1; //O cualquier otro valor que no se encuentre en la pila
+        struct Producto elemento;
+        elemento.id = -1;
+        elemento.fechaCaducidad = -1;
+	return elemento; //O cualquier otro valor que no se encuentre en la pila
     }	
-    else{
-        int elemento = cima(pila);
+    else {
+        //devuelve los datos del contenedor sacado
+        struct Producto paquete = pila.lista.cabeza->elemento;
+//        int elemento = cima(pila);
         eliminaCabeza(pila.lista);
-        return elemento;
+        return paquete;
     }
 }
 
@@ -54,7 +59,7 @@ int cima(const struct Pila & pila){
     if (esPilaVacia(pila)){
 	cout<<"La pila está vacía por lo tanto no posee cima"<<endl;
         return -1; //O cualquier otro valor que no se encuentre en la pila
-    }		
+    }
     return retornaCabeza(pila.lista);
 }
 
@@ -73,13 +78,4 @@ void imprimir(const struct Pila & pila){
     else
         imprime(pila.lista);
 }
-
-///*imprime desapilando*/
-//void imprime(struct Pila & pila){
-//    
-//    while(not esPilaVacia(pila)){
-//        cout<<cima(pila)<<"-";
-//        desapilar(pila);
-//    }
-//}
 

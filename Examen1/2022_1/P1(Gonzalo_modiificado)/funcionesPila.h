@@ -10,8 +10,11 @@
 void construir(struct Pila & );
 int longitud(const struct Pila & );
 bool esPilaVacia(const struct Pila &);
-void apilar(struct Pila &, int ); 
-int desapilar(struct Pila &);
+void apilar(struct Pila &, struct Producto ); 
+
+
+struct Producto desapilar(struct Pila &);
+
 int cima(const struct Pila &);
 void destruirPila(struct Pila &);
 void imprimir(const struct Pila &);

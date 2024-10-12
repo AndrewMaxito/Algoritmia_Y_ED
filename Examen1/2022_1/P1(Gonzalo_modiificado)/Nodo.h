@@ -6,10 +6,11 @@
 
 #ifndef NODO_H
 #define NODO_H
+#include "StProducto.h"
 
 /*Nodo esta formado por Elemento y un puntero al siguiente Nodo*/
 struct Nodo {
-    int elemento; /*Dato que cambia por double, char, struct */
+    struct Producto elemento; /*Dato que cambia por double, char, struct */
     struct Nodo * siguiente; /*puntero a una variable de tipo struct Nodo*/
 };
 
