@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=iterativoabb_inorder
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/iterativoabb_inorder
+CND_ARTIFACT_NAME_Debug=recorridosconmetodoiterativo
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/recorridosconmetodoiterativo
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
-CND_PACKAGE_NAME_Debug=iterativoabbinorder.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/iterativoabbinorder.tar
+CND_PACKAGE_NAME_Debug=recorridosconmetodoiterativo.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/recorridosconmetodoiterativo.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=iterativoabb_inorder
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/iterativoabb_inorder
+CND_ARTIFACT_NAME_Release=recorridosconmetodoiterativo
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/recorridosconmetodoiterativo
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
-CND_PACKAGE_NAME_Release=iterativoabbinorder.tar
-CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/iterativoabbinorder.tar
+CND_PACKAGE_NAME_Release=recorridosconmetodoiterativo.tar
+CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/recorridosconmetodoiterativo.tar
 #
 # include compiler specific variables
 #

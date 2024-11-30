@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=IterativoAbb_InOrder
+PROJECTNAME=RecorridosConMetodoIterativo
 
 # Active Configuration
 DEFAULTCONF=Debug
