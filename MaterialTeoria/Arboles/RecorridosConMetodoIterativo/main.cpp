@@ -33,6 +33,25 @@ NodoArbol * buscaNodoElemento_Iterativo(NodoArbol *raiz, int elemento) {
     cout << "No se encontro el nodo " << endl;
     exit(1);
 }
+void Insertar_Recursivo(ArbolBinarioBusqueda& arbol, int dato){
+    NodoArbol *recorrido = arbol.arbolBinario.raiz;
+    while (true) {
+        if(recorrido->elemento== dato) break;//ya existe
+        
+        if (recorrido->elemento > dato){
+            if (esNodoVacio(recorrido->izquierda)){
+                plantarArbolBinario(recorrido->izquierda,nullptr,dato,nullptr);
+                return ;
+            }else recorrido = recorrido->izquierda;
+        }else{
+            if (esNodoVacio(recorrido->derecha)){
+                plantarArbolBinario(recorrido->derecha,nullptr,dato,nullptr);
+                return ;
+            }else recorrido = recorrido->derecha;        
+        }
+    }
+}
+
 
 void recorrerEnOrden_Iterativo(ArbolBinarioBusqueda arbol) {
     if (esNodoVacio(arbol.arbolBinario.raiz)) return;
